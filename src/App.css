@@ -127,3 +127,11 @@ input {
   outline: none;
   cursor: default;
 }
+.addNewItemForm {
+  margin-bottom: 20px;
+}
+.addNewItemForm input {
+  border: 1.7px solid #dee2e6;
+  margin-right: 15px;
+  cursor: auto;
+}

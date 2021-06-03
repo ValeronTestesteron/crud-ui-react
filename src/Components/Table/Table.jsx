@@ -17,11 +17,17 @@ export default class Table extends Component {
         };
     }
 
-    addNewCoctail() {
+    addNewCoctail(e) {
+        e.preventDefault();
+        
+        const form = e.target;
+        const age = form.elements["age"].value;
+        const name = form.elements["name"].value;
+
         const requestOptions = {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify( {data: { id: '12', name: 'jon', age: '12', phone: '8899989882', email: 'comp@yandex.ru' }})
+            body: JSON.stringify( {data: { id: '', name: name, age: age, phone: '', email: '' }})
         };
         fetch('http://178.128.196.163:3000/api/records', requestOptions)
             .then(async response => {
@@ -31,11 +37,11 @@ export default class Table extends Component {
                     const error = (data && data.message) || response.status;
                     return Promise.reject(error);
                 } else {
-                    let newCoctailInfo = {data: {  id: '12', name: 'jon', age: '12', phone: '8899989882', email: 'comp@yandex.ru' }};
+                    let newCoctailInfo = {data: {  id: '', name: name, age: age, phone: '', email: '' }};
                     this.setState({
                         tableData: [...this.state.tableData, newCoctailInfo]
                     });
-                    console.log("New State, add method");
+                    console.log(`New State, add method:`);
                     console.log(this.state.tableData);
                 }
             })
@@ -76,29 +82,29 @@ export default class Table extends Component {
     }
 
     getId(val){
-        this.setState({
+        return this.setState({
             idS: val
         });
     }
     getName(val){
         return this.setState({
             nameS: val
-        })
+        });
     }
     getAge(val){
         return this.setState({
             ageS: val
-        })
+        });
     }
     getPhone(val){
         return this.setState({
             phoneS: val
-        })
+        });
     }
     getEmail(val){
         return this.setState({
             emailS: val
-        })
+        });
     }
 
     updateTable(item, e) {
@@ -116,7 +122,7 @@ export default class Table extends Component {
             this.setState({idS: curValId})
         }
         if(this.state.nameS !== curValName) {
-            this.setState({nameS: curValId})
+            this.setState({nameS: curValName})
         }
         if(this.state.ageS !== curValAge) {
             this.setState({ageS: curValAge})
@@ -128,7 +134,6 @@ export default class Table extends Component {
             this.setState({emailS: curValEmail})
         }
         
-
         if(editFlag) {
 
             e.target.innerText = '✎';
@@ -219,7 +224,12 @@ export default class Table extends Component {
 
             <div>
 
-            <button className="btn" value="Добавить" onClick={ (e) => {this.addNewCoctail(e)} }>Добавить</button>
+            <form className="addNewItemForm" onSubmit={ (e) => {this.addNewCoctail(e)} }>
+                <input type="text" id="name" className='test-iput' placeholder='Name' />
+                <input type="text" id="age" className='test-iput' placeholder='Age' />
+                <button className="btn" value="Добавить">Добавить</button>
+            </form>
+            
             
             <table className="table">
                 <thead className="thead-dark">
