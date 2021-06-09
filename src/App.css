@@ -1,0 +1,137 @@
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+}
+.table .thead-dark th {
+  color: #fff;
+  background-color: #212529;
+  border-color: #32383e;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #212529;
+    border-color: #32383e;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.table tbody td, .table tbody th {
+  padding: 0;
+}
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: middle;
+  border: 1px solid #dee2e6;
+}
+th {
+    text-align: inherit;
+}
+.table-container {
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+.btn {
+  color: #fff;
+  background-color: #7952b3;
+  display: inline-block;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: none;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+}
+.btn-delete {
+  color: #fff;
+  background-color: red;
+  display: inline-block;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: none;
+  padding: .375rem .75rem;
+  height: 32px;
+  width: 35px;
+}
+.btn-update {
+  color: #fff;
+  background-color: #0d9bcb;
+  display: inline-block;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: none;
+  padding: .375rem .75rem;
+  height: 32px;
+  width: 35px;
+}
+input {
+  padding: .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  border: none;
+  outline: none;
+  cursor: default;
+}
+.addNewItemForm {
+  margin-bottom: 20px;
+}
+.addNewItemForm input {
+  border: 1.7px solid #dee2e6;
+  margin-right: 15px;
+  cursor: auto;
+}
