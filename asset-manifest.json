@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/crud-ui-react/static/css/main.986107d2.chunk.css",
-    "main.js": "/crud-ui-react/static/js/main.6c895483.chunk.js",
-    "main.js.map": "/crud-ui-react/static/js/main.6c895483.chunk.js.map",
+    "main.css": "/crud-ui-react/static/css/main.2cb05d5b.chunk.css",
+    "main.js": "/crud-ui-react/static/js/main.36b981a1.chunk.js",
+    "main.js.map": "/crud-ui-react/static/js/main.36b981a1.chunk.js.map",
     "runtime-main.js": "/crud-ui-react/static/js/runtime-main.9391924a.js",
     "runtime-main.js.map": "/crud-ui-react/static/js/runtime-main.9391924a.js.map",
     "static/js/2.5d84b070.chunk.js": "/crud-ui-react/static/js/2.5d84b070.chunk.js",
     "static/js/2.5d84b070.chunk.js.map": "/crud-ui-react/static/js/2.5d84b070.chunk.js.map",
     "index.html": "/crud-ui-react/index.html",
-    "precache-manifest.8c49e8202e654b3a09298b43f0533cef.js": "/crud-ui-react/precache-manifest.8c49e8202e654b3a09298b43f0533cef.js",
+    "precache-manifest.4b5b30bb4f869a74bbb9e1f25b60aa78.js": "/crud-ui-react/precache-manifest.4b5b30bb4f869a74bbb9e1f25b60aa78.js",
     "service-worker.js": "/crud-ui-react/service-worker.js",
-    "static/css/main.986107d2.chunk.css.map": "/crud-ui-react/static/css/main.986107d2.chunk.css.map",
+    "static/css/main.2cb05d5b.chunk.css.map": "/crud-ui-react/static/css/main.2cb05d5b.chunk.css.map",
     "static/media/logo.svg": "/crud-ui-react/static/media/logo.ee7cd8ed.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.9391924a.js",
     "static/js/2.5d84b070.chunk.js",
-    "static/css/main.986107d2.chunk.css",
-    "static/js/main.6c895483.chunk.js"
+    "static/css/main.2cb05d5b.chunk.css",
+    "static/js/main.36b981a1.chunk.js"
   ]
 }
