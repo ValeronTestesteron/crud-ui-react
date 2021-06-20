@@ -9,11 +9,10 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>React crud-ui in table</h2>
+          <p>Данные получены из http://178.128.196.163:3000/api/records и выведены в таблицу. Можно добавить новую запись через поля name и age. Удалить запись нажав на X в столбце action. Так же можно отредактировать выбранную запись, эта запись выберется и поля станут доступны для редактирования.</p>
+          <p>В консоли есть вывод Стэйтов при операциях.</p>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
         <div className="table-container">
           <Table />
         </div>

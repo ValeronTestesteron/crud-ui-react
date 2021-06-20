@@ -224,13 +224,14 @@ export default class Table extends Component {
 
             <div>
 
+            <h2>Добавить запись</h2>
             <form className="addNewItemForm" onSubmit={ (e) => {this.addNewCoctail(e)} }>
                 <input type="text" id="name" className='test-iput' placeholder='Name' />
                 <input type="text" id="age" className='test-iput' placeholder='Age' />
                 <button className="btn" value="Добавить">Добавить</button>
             </form>
             
-            
+            <h2>Данные</h2>
             <table className="table">
                 <thead className="thead-dark">
                     <tr>
